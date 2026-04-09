@@ -1,1 +1,821 @@
+Module 4: Essential Statistics & Mathematics for DataScience
+
+Theoretical Assignments:
+
+1. Explain Key Statistical Concepts:
+
+statistics:its helps us convert raw data into useful information.
+descriptive statistics: its describe and summarize data
+Inferential Statistics:its draw conclusions about a population using asample
+population:entire group of interest
+sample:small subset taken from population
+mean:the mean is the sum of all values divide by the total number of observation
+median:the median is the middel value when data is arranged in ascending order.
+mode:the mode is the value that apperas most frequently
+range:the range is the difference between the maximum and minimum values in dataset.
+variance:variance mesures the average squared deviation of each data point from the mean.it tells us how far data points are from the average
+standard deviaton:the standard deviation is the square root of variance.it measures how much data typically deviates from the mean.
+coefficient of variation:the cofficient of variation mesaures relative variability.it tell us how large the sd is relative to the mean.
+percentile:a percentile tells us the values below which a given percentage of observation fall.
+quartile:quartile divide data into 4 equal parts.
+interquartile range:iqr measure the spread of the middel 50% of data.
+boxploat:a boxploat visually shows minimum,q1,median,q3,maximum,qutliers
+probability:its measures the liklihood that an event will occur.
+experiment:an action with uncertain outcome.
+outcome:single possible result of an experimemt
+event:subset of sample space.
+bayes' theorem: its help us reverse conditional probability
+Skewness: Measure of asymmetry in data distribution.
+Kurtosis: Measure of peaked Ness of distribution.
+Correlation: Relationship between two variables.
+regression:regression is one of the most widely used predictive techniques in analytics.
+linear algebra:its the branch of mathematics that studies vector,matrics,and linear tranformation.
+matrics:its a fundamental for representing and manipulationg dataset in machine lerinng.
+matrix:a matrix is a rectangular array of numbers arranged in rows and columns.
+
+
+
+2. Presentation: Importance of Probability in Machine Learning
+:  help models make decision when data is uncertain.
+   used in algorithem like native bayes for prediction.
+   shows how confident a model is in its predection
+   helps choose the best action and estimate risk
+
+
+
+Practical Tasks
+1. Business Problem: A car rental company wants to analyze the rental durations of itscustomers to understand the typical rental period and optimize its pricing andfleet
+management strategies. Data: Let's consider the rental durations (in days) for asample of 50 customers:
+3, 2, 5, 4, 7, 2, 3, 3, 1, 6, 4, 2, 3, 5, 2, 4, 2, 1, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3, 4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5
+Question:
+a. Mean: What is the average rental duration for customers at the car rental
+company?
+b. Median: What is the typical or central rental duration experiencedbycustomers?
+c. Mode: Are there any recurring or most frequently occurring rental
+durations for customers?
+By answering these questions using the mean, median, and mode, thecar
+rental company can gain insights into the average rental duration, understand the most common rental periods, and make informed decisionsregarding pricing, fleet size, and availability.
+Additionally, this analysiscan help the company optimize resource allocation, plan for peak demandperiods, and enhance customer satisfaction by aligning service offeringswith customers' typical rental needs.
+
+ans::::
+data:3, 2, 5, 4, 7, 2, 3, 3, 1, 6, 4, 2, 3, 5, 2, 4, 2, 1, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3, 4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5
+ total values(n):50
+
+A:total sum:172
+mean=172/50=3.44 days
+
+B:
+median position=25th and 26th are both 3
+median=(3+3)/2=3
+
+C:
+mode=2(most freq value of data)
+
+
+
+
+
+
+2. An e-commerce platform wants to analyze the delivery times of its shipments tounderstand the variability in order fulfillment and optimize its logistics operations. Data:
+Let's consider the delivery times (in days) for a sample of 50 shipments:
+3, 5, 2, 4, 6, 2, 3, 4, 2, 5, 7, 2, 3, 4, 2, 4, 2, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3, 4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5, 3
+Questions:
+a. Range: What is the range of the delivery times?
+b. Variance: What is the variance of the delivery times?
+c. Standard Deviation: What is the standard deviation of the deliverytimes?By answering these questions using different measures of dispersion, the e- commerce platform can gain insights into the variability in delivery times,
+identify any bottlenecks in the logistics process, and make informed decisionsregarding shipment tracking,customer expectations, and service level agreements.
+
+
+ans:::
+
+data:
+3, 5, 2, 4, 6, 2, 3, 4, 2, 5, 7, 2, 3, 4, 2, 4, 2, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3, 4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5, 3
+
+A:
+min=1
+max=7
+range:mix-min
+       7-1=6
+
+B:
+mean:181/50=3.62
+sum=(x-mean)^2
+sum=111.78
+variance=111.78/50=2.24
+
+C:
+std=squrt of variance=1.5
+
+
+
+
+3. A company wants to analyze the monthly revenue generated by one of its productsto understand its performance and variability. Data: Let's consider the monthly revenue (in thousands of dollars) for the past 12months:
+$120, $150, $110, $135, $125, $140, $130, $155, $115, $145, $135, $130Questions:
+a. Measure of Central Tendency: What is the average monthly revenuefor
+the product?
+b. Measure of Dispersion: What is the range of monthly revenue for theproduct?
+By answering these questions, the company can gain insights into the averagerevenue generated by the product and understand the range or variabilityinitsmonthly revenue, which can help with financial planning, 
+forecasting, andevaluating the product's performance
+
+
+ans::::
+data==$120, $150, $110, $135, $125, $140, $130, $155, $115, $145, $135, $130Questions:
+n=12
+
+A:
+total sum of data:1590
+mean=avg=1590/12=132.5
+
+B:
+max=155
+min=110
+range=155-110=45
+
+
+
+
+
+
+ 4. A transportation company wants to analyze the fuel efficiency of its vehicle fleet toidentify any variations across different vehicle models. Data: Let's consider the fuel efficiency (in miles per gallon, mpg) for a sampleof50 vehicles:
+Model A: 30, 32, 33, 28, 31, 30, 29, 30, 32, 31, 
+Model B: 25, 27, 26, 23, 28, 24, 26, 25, 27, 28, 
+Model C: 22, 23, 20, 25, 21, 24, 23, 22, 25, 24,
+Model D: 18, 17, 19, 20, 21, 18, 19, 17, 20, 19, 
+Model E: 35, 36, 34, 35, 33, 34, 32, 33, 36, 34
+Questions:
+a. Measure of Central Tendency: What is the average fuel efficiencyfor eachvehicle model?
+b. Measure of Dispersion: What is the range of fuel efficiency for eachvehicle model?
+c. Measure of Dispersion: What is the variance of the fuel efficiencyfor eachvehicle model?
+By answering these questions, the transportation company can gaininsights into the average fuel efficiency of different vehicle models,
+understand the variations or spread in the fuel efficiency, and make
+informed decisions regarding fleet management, vehicle selection, andfuel
+consumption optimization.
+
+
+
+
+
+ans==========
+model A:
+sum=306
+mean=306/10=30.6
+
+range:
+max=33
+min=28
+range=5
+
+variance:(x-mean)^2=9404
+variance=(9404/10)-(30.6)2=940.4-936.36=4.04
+
+
+model B:Data: 25, 27, 26, 23, 28, 24, 26, 25, 27, 28
+
+sum=259
+mean=259/10=25.9
+
+range:
+max=28
+min=23
+range=5
+
+variance:(x-mean)^2=6733
+variance=(6733/10)-(25.9)2=673.3-670.81=2.49
+
+
+
+MODEL=C
+Data: 22, 23, 20, 25, 21, 24, 23, 22, 25, 24
+
+sum=229
+mean= 229 / 10 = 22.9
+
+range:
+max=25
+min=20
+range=5
+
+variance:(x-mean)^2=5273
+variance=(5273/10)-(22.9)2=527.3 − 524.41= 2.89
+
+
+MODEL=D
+Data: 18, 17, 19, 20, 21, 18, 19, 17, 20, 19
+
+Mean:
+Sum = 188
+Mean = 188 / 10 = 18.8
+
+Range:
+Max = 21,
+Min = 17
+Range = 4
+
+Variance:
+(x-mean)² = 3554
+Variance = (3554 / 10) − (18.8)²= 355.4 − 353.44= 1.96
+
+
+MODEL=E
+Data: 35, 36, 34, 35, 33, 34, 32, 33, 36, 34
+
+Mean:
+Sum = 342
+Mean = 342 / 10 = 34.2
+
+Range:
+Max = 36, 
+Min = 32
+Range = 4
+
+Variance:
+(x-mean)² = 11716
+Variance = (11716 / 10) − (34.2)²= 1171.6 − 1169.64= 1.96
+
+Model A: Mean = 30.6, Range = 5, Variance = 4.04
+Model B: Mean = 25.9, Range = 5, Variance = 2.49
+Model C: Mean = 22.9, Range = 5, Variance = 2.89
+Model D: Mean = 18.8, Range = 4, Variance = 1.96
+Model E: Mean = 34.2, Range = 4, Variance = 1.96
+
+conclusion:
+model E mean is high so it is very high fuel-efficient model
+model D mean is low so its is low fule-efficient model
+
+vriannce thr:
+model A variance is very high som its performance is minor inconsistent 
+model D or model E variance are minor low so this model is give stabel and consistante performance
+if all over company's model is same as model E so this vehical is very preferable because its high efficiency and stable performance
+
+
+
+
+
+5. A manufacturing company wants to analyze the defect rates of its productionlinetoidentify the frequency of different types of defects. Data: Let's consider the types of defects and their corresponding frequencies
+observed in a sample of 200 products:
+Defect Type: A, B, C, D, E, F, G
+Frequency: 30, 40, 20, 10, 45, 25, 30
+Questions:
+a. Bar Chart: Create a bar chart to visualize the frequency of different defect
+types. b. Most Common Defect: Which defect type has the highest frequency?c. Histogram: Create a histogram to represent the defect frequencies. By answering these questions using a bar chart and histogram, 
+the manufacturingcompany can visually understand the distribution of defect types, identifythemost common defect, and prioritize quality control efforts to address the prevalent
+issues.
+
+
+ans====
+A:
+ draw Bar Chart:
+
+X-axis par defect types → A, B, C, D, E, F, G
+Y-axis par frequency (number of defects)
+
+Example:
+Defect types=frquency
+A = 30
+B = 40
+E = 45 (sabse bada bar)
+Explanation: Bar chart clearly dikhata hai ki kaunsa defect zyada aur kaunsa kam aa raha hai.
+
+
+B:
+Most Common Defect: Which defect type has the highest frequency?
+Sabse zyada frequency = 45
+Most common defect is Type E
+
+C:
+Histogram: Create a histogram to represent the defect frequencies
+
+Grouping:frquency range me=defect types kitne he iss range me vo
+0–10 → D (10) → 1
+10–20 → C (20) → 1
+20–30 → F (25) → 1
+30–40 → A, G (30, 30) → 2
+40–50 → B, E (40, 45) → 2
+Histogram data ka distribtion dikhata hai ki  kaunse range me defects zyada aa rahe he
+conclusion:
+Defect E sabse zyada hai, aur majority defects 30–50 range me hain, isliye quality improvement ke liye E aur B par focus karna chahiye.
+
+
+
+
+
+
+
+6. A survey was conducted to analyze the satisfaction ratings of customers onascaleof 1 to 5 for a specific product. Data: Let's consider the satisfaction ratings from 200 customers:
+Ratings:
+4, 5, 3, 4, 4, 3, 2, 5, 4, 3, 5, 4, 2, 3, 4, 5, 3, 4, 5, 3, 4, 3, 2, 4, 5, 3, 4, 5, 4, 3, 3, 4, 5, 2, 3, 4, 4, 3, 5, 4, 3, 4, 5, 4, 2, 3, 4, 5, 3, 4, 5, 4, 3, 4, 5, 3, 4, 5, 4, 3, 3, 4, 5, 2, 3, 4, 4, 3, 5, 4,
+3, 4, 5, 4, 2, 3, 4, 5, 3, 4, 5, 4, 3, 4, 5, 3, 4, 5, 4, 3, 3, 4, 5, 2, 3, 4, 4, 3, 5, 4
+Questions:
+a. Skewness: Calculate the skewness of the satisfaction ratings. b. Kurtosis: Calculate the kurtosis of the satisfaction ratings. c. Interpretation: Based on the skewness and kurtosis values, what canbeinferred about the satisfaction ratings distribution?
+By answering these questions using measures of skewness and kurtosis, thesurvey can assess the skewness and peakedness of the satisfaction ratings, determine if the ratings are skewed towards positive or negative evaluations, andunderstand the distribution characteristics of customer satisfaction
+
+
+ans=======
+STEP1:
+Data: Let's consider the satisfaction ratings from 200 customers:
+Ratings:
+4, 5, 3, 4, 4, 3, 2, 5, 4, 3, 5, 4, 2, 3, 4, 5, 3, 4, 5, 3, 4, 3, 2, 4, 5, 3, 4, 5, 4, 3, 3, 4, 5, 2, 3, 4, 4, 3, 5, 4, 3, 4, 5, 4, 2, 3, 4, 5, 3, 4, 5, 4, 3, 4, 5, 3, 4, 5, 4, 3, 3, 4, 5, 2, 3, 4, 4, 3, 5, 4, 3, 4, 5, 4, 2, 3, 4, 5, 3, 4, 5, 4, 3, 4, 5, 3, 4, 5, 4, 3, 3, 4, 5, 2, 3, 4, 4, 3, 5, 4
+Ratings = 1–5 scale
+Total observations (n) = 100
+
+                                                                                                
+STEP 2: FREQUENCY DISTRIBUTION
+                                                                                                
+
+Count each rating:
+
+Rating 2 → 10 times
+Rating 3 → 30 times
+Rating 4 → 40 times
+Rating 5 → 20 times
+
+                                                                                                
+STEP 3: MEAN (AVERAGE)
+                                                                                                
+
+Formula:
+Mean = Σ(f * x) / n
+
+= (2*10 + 3*30 + 4*40 + 5*20) / 100
+= (20 + 90 + 160 + 100) / 100
+= 370 / 100
+= 3.7
+
+Mean = 3.7
+
+                                                                                                
+STEP 4: MEDIAN
+                                                                                                
+
+n = 100 (even)
+
+Median = average of 50th and 51st values
+
+From frequency:
+2 → positions 1–10
+3 → positions 11–40
+4 → positions 41–80
+5 → positions 81–100
+
+50th and 51st values fall in 4
+
+Median = 4
+
+                                                                                                
+STEP 5: MODE
+                                                                                                
+
+Highest frequency = 40 (rating 4)
+
+Mode = 4
+
+                                                                                                
+STEP 6: SKEWNESS
+                                                                                                
+
+Formula (conceptual):
+Skewness depends on relation between Mean, Median, Mode
+
+Mean = 3.7
+Median = 4
+Mode = 4
+
+Since:
+Mean < Median = Mode
+
+This indicates NEGATIVE SKEWNESS
+
+                                                                                                
+STEP 7: INTERPRET SKEWNESS
+                                                                                                
+
+Negative Skewness means:
+
+- Tail is on LEFT side (low values)
+- Most data is concentrated on RIGHT (high ratings)
+
+Conclusion:
+Data is slightly negatively skewed
+
+                                                                                                
+STEP 8: KURTOSIS
+                                                                                                
+
+Concept:
+
+- Kurtosis measures "peakedness" of data
+- Compare with normal distribution
+
+Observation:
+- Ratings are concentrated around 3 and 4
+- No extreme outliers
+
+So:
+
+Kurtosis ≈ Normal (Mesokurtic)
+
+                                                                                                
+STEP 9: INTERPRET KURTOSIS
+                                                                                                
+
+Normal Kurtosis means:
+
+- Data is neither too peaked nor too flat
+- Distribution is balanced
+
+                                                                                                
+FINAL RESULTS
+                                                                                                
+
+Mean = 3.7
+Median = 4
+Mode = 4
+
+Skewness = Slight Negative
+Kurtosis = Normal (Mesokurtic)
+
+                                                                                                
+CONCLUSION:
+- Most customers give ratings 3, 4, or 5
+- Ratings are concentrated on higher side
+- Slight negative skew shows more high ratings than low ratings
+- Product satisfaction is good
+
+Conclusion:
+Customers are generally satisfied with the product
+
+
+
+
+7. A research study wants to analyze the weight distribution of a sample of
+individuals to assess their health and body composition. Data: Let's consider the weights (in kilograms) of a sample of 100 individuals:
+Weights:
+55, 60, 62, 65, 68, 70, 72, 75, 78, 80, 82, 85, 88, 90, 92, 95, 100, 105, 110, 115,
+120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195,
+200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 
+280, 285, 290, 295, 300, 305, 310, 315, 320, 325, 330, 335, 340, 345, 350, 355, 
+360, 365, 370, 375, 380, 385, 390, 395, 400, 405, 410, 415, 420, 425, 430, 435,
+440, 445, 450, 455, 460, 465, 470, 475, 480, 485, 490, 495, 500, 505, 510, 515
+Questions:
+a. Quartiles: Calculate the first quartile (Q1), median (Q2), and thirdquartile(Q3) of the weight distribution. b. Percentiles: Calculate the 15th percentile, 50th percentile, and 85thpercentile of the weight distribution. c. Interpretation: Based on the quartiles and percentiles, what can be inferredabout the weight distribution of the individuals?
+By answering these questions using quartiles and percentiles, the researchstudycan understand the weight distribution and identify the weight ranges at different
+percentiles, such as underweight, normal weight, overweight, and obese
+categories. This information
+
+
+
+ands======
+Step a: Quartiles
+
+Q1 = (n+1)/4 th value
+Q2 = (n+1)/2 th value
+Q3 = 3(n+1)/4 th value
+Q1 position = (100+1)/4 = 101/4 = 25.25
+
+So Q1 lies between 25th and 26th value
+
+25th value = 140
+26th value = 145
+
+Q1 = 140 + 0.25*(145 - 140)= 140 + 0.25*(5)= 140 + 1.25= 141.25
+
+Q2FOR Median position = (100 + 1) * 2  = 101 / 2 = 50.5
+This means median is between 50th and 51st values:
+
+50th value = 265
+51st value = 270
+
+Q2=Median = 265 + 0.5 * (270 - 265) = 265 + 2.5 = 267.5 kilograms
+
+FOR Q3
+
+\Third quartile position = (100 + 1) * 3 / 4 = 101 * 3 / 4 = 75.75
+This means Q3 is between 75th and 76th values:
+
+75th value = 385
+76th value = 390
+
+Q3 = 385 + 0.75 * (390 - 385) = 385 + 3.75 = 388.75 kilograms
+
+STEP 2 : PERCENTILES FORMULA
+                                                                                                
+
+Position = (P/100) × (n+1)
+
+                                                                                                
+STEP 3: CALCULATE P15
+                                                                                                
+
+Position = 15/100 × 101 = 15.15
+
+15th value = 92
+16th value = 95
+
+P15 = 92 + 0.15*(95 - 92)
+= 92 + 0.45
+= 92.45
+
+P15 ≈ 92.5 kg
+
+                                                                                                
+STEP 4: CALCULATE P50
+                                                                                                
+
+P50 = Median = 267.5 kg
+
+                                                                                                
+STEP 5: CALCULATE P85
+                                                                                                
+
+Position = 85/100 × 101 = 85.85
+
+85th value = 440
+86th value = 445
+
+P85 = 440 + 0.85*(445 - 440)
+= 440 + 4.25
+= 444.25
+
+P85 ≈ 444 kg
+
+                                                                                                
+FINAL RESULTS
+                                                                                                
+
+Q1 ≈ 141 kg
+Q2 (Median) ≈ 267.5 kg
+Q3 ≈ 388 kg
+
+P15 ≈ 92.5 kg
+P50 ≈ 267.5 kg
+P85 ≈ 444 kg
+
+Overall Interpretation
+25% of individuals weigh less than 141 kg
+- 50% weigh less than 267.5 kg
+- 75% weigh less than 384 kg
+-Most people’s weight is between 141.25 and 388.75 kilograms.
+The data is spread out, meanss there are very light and very heavy people.
+Quartiles and percentiles help us understand weight ranges: underweight, normal, overweight, and very heavy people.
+
+
+
+
+8. A researcher wants to examine the relationship between the hours spent studyingand the exam scores of a group of students. Data: Let's consider the number of hours spent studying and the correspondingexam scores for a sample of 30 students:
+Hours Spent Studying:
+10, 12, 15, 18, 20, 22, 25, 28, 30, 32, 35, 38, 40, 42, 45, 48, 
+50, 52, 55, 58, 60, 62, 65, 68, 70, 72, 75, 78, 80, 82 
+Exam Scores:
+60, 65, 70, 75, 80, 82, 85, 88, 90, 92, 93, 95, 96, 97, 98, 99, 100, 102, 105, 106, 107, 108, 110,
+112, 114, 115, 116, 118, 120, 122
+Question:
+Calculate the correlation coefficient between the hours spent studying andtheexam scores. Interpret the value of the correlation coefficient and explainthenature of the relationship between studying hours and examscores.
+
+
+ans====
+STEP 1: GIVEN DATA
+                                                                                                
+
+Hours (x):
+10,12,15,18,20,22,25,28,30,32,35,38,40,42,45,
+48,50,52,55,58,60,62,65,68,70,72,75,78,80,82
+
+Scores (y):
+60,65,70,75,80,82,85,88,90,92,93,95,96,97,98,
+99,100,102,105,106,107,108,110,112,114,115,116,118,120,122
+
+n = 30
+
+
+STEP 2: FORMULA
+                                                                                                
+
+r = Σ[(x - x̄)(y - ȳ)] / (√Σ(x - x̄)² × √Σ(y - ȳ)²)
+
+                                                                                                
+STEP 3: MEAN
+x̄ = 46.6
+ȳ = 98.4
+STEP 4: CALCULATION (SUMMARY)                           
+Σ(x - x̄)(y - ȳ) ≈ large positive value  
+Σ(x - x̄)² and Σ(y - ȳ)² also large  
+
+After calculation
+finl result                                                                                                
+Correlation coefficient r = 0.99
+
+Conclusion
+   Very strong positive correlation
+study hours increase → marks increase
+- Relationship is almost linear
+
+
+
+
+9. A multiple-choice test consists of 10 questions, each with four possible answers. If astudent randomly guesses on each question, what is the probability of gettingat least
+8 questions correct? Data: Number of questions (n) = 10, Number of possible
+answers per question (k) = 4
+
+ans====
+
+ A multiple-choice test consists of 10 questions, each with four possible answers. If astudent randomly guesses on each question, what is the probability of gettingat least
+8 questions correct? 
+Data: Number of questions (n) = 10, Number of possible
+answers per question (k) = 4
+
+answer:
+n = 10
+p = 1/4 = 0.25
+q = 1 - p = 0.75
+Step 1: Identify type of problem
+
+STEP 2: formula
+                                                                                                
+P(X=k) = nCk × p^k × q^(n-k)
+STEP 3: CALCULATE
+P(X ≥ 8) = P(8) + P(9) + P(10)
+ P(8) = 10C8 × (0.25)^8 × (0.75)^2= 45 × small value ≈ 0.00038
+P(9) =0.00003  
+P(10) =0.000001  
+
+STEP 4: FINAL
+P(at least 8 correct) = P(8) + P(9) + P(10)
+= 0.000387 + 0.0000286 + 0.00000095 ≈ 0.0004166
+P(X ≥ 8) = 0.0004
+conclusion:
+very small probability → because guessing that many correctly is very unlikely
+
+
+
+
+10. The lifetimes of a certain brand of light bulbs are normally distributed witha meanof 1000 hours and a standard deviation of 100 hours. 
+What is the probabilitythat arandomly selected light bulb lasts between 900 and 1100 hours? Data: Meanlifetime(μ) = 1000 hours, Standard deviation (σ) = 100 hours, 
+Lifetime range (lower limit x1, upper limit x2)
+
+
+
+ans====
+STEP 1: GIVEN
+                                                                                                
+
+Mean (μ) = 1000
+Standard deviation (σ) = 100
+Range: 900 to 1100          
+                                                                                      
+STEP 2: Z-SCORE
+Z = (x - μ)/σ
+Z1 = (900 - 1000)/100 = -1  
+Z2 = (1100 - 1000)/100 = +1  
+
+STEP 3: PROBABILITY
+From Z-table:
+P(-1 < Z < 1) = 0.68
+Probability = 0.68
+Interpretation: about 68% of the light bulbs will last between 900 and 1100 hours.
+
+
+
+
+11. A study is conducted to estimate the mean height of a population. Arandomsampleof 100 individuals is selected, and their heights are measured.
+Calculate a 95%confidence interval for the population mean height, given that the sample meanheight is 170 cm and the sample standard deviation is 8 cm.
+Data: Sample size(n) =100, Sample mean (x̄) = 170 cm, Sample standard deviation (s) = 8 cm, Confidencelevel = 95%
+Explanation: In this problem, we use a sample to estimate the populationmeanheight.
+By calculating a confidence interval, we provide a range of plausiblevalues for the population mean.
+The 95% confidence level indicates that weare95% confident that the true population mean height falls within the calculatedinterval.
+
+
+
+
+ans======
+STEP 1: 
+x̄ = 170
+s = 8
+n = 100
+Z = 1.96 (95%)
+
+STEP 2: formula of Confidence Interval
+                                                                                                
+CI = x̄ ± Z × (s/√n)
+
+STEP 3: Calculation                                                                                                
+
+√n = 10= 170 ± 1.96 × (8/10)= 170 ± 1.96 × 0.8= 170 ± 1.57
+
+                                                                                                
+STEP 4: finl result
+CI = (168.43, 171.57)
+conclusion:
+ 95% confident that the true mean height of the population is between 168.43 cm and 171.57 cm.
+
+
+
+
+12. A manufacturing company claims that the average weight of its product is 500grams. To test this claim, a random sample of 25 products is selected, and their
+weights are measured. The sample mean weight is found to be 510 grams withasample standard deviation of 20 grams. Perform a hypothesis test to determineif
+there is evidence to support the company's claim. Data: Sample size (n) =25, Sample mean (x̄) = 510 grams, 
+Sample standard deviation (s) = 20 grams, Population mean (μ) = 500 grams
+Explanation: In this problem, we are conducting a hypothesis test to assess
+whether the sample mean weight provides evidence to support the company's
+claim about the population mean weight. The null hypothesis (H0) assumes that
+the population mean weight is equal to the claimed value, while the alternativehypothesis (Ha) suggests otherwise
+
+ans==========
+STEP 1: hypothesis
+
+H₀: μ = 500
+H₁: μ ≠ 500
+
+STEP 2: formula
+
+Since the sample size is small (n < 30) and population standard deviation is unknown, we use t-test:
+
+t = (x̄ − μ) / (s / √n)
+
+STEP 3: calculation
+
+t = (510 − 500) / (20 / √25)
+= 10 / (20 / 5)
+= 10 / 4
+= 2.5
+
+STEP 4: DECISION
+Degrees of freedom = n − 1 = 25 − 1 = 24
+t critical (two-tailed, 95% confidence) ≈ 2.064
+
+So ,2.5 > 2.064 → Reject H₀
+CONCLUSION
+There is enough evidence to say that the mean weight is not 500 grams.
+The company’s claim is not fully supported.
+
+
+13.A researcher wants to test whether a new teaching method improves student
+performance. A random sample of 50 students is divided into two groups: onegrouptaught using the new method and the other using the traditional method. The averagetest scores of the two groups are compared. State the null and alternative hypothesesfor this study. Data: Sample size (n) = 50, Test scores of the two groups
+Explanation: In this problem, we are interested in comparing the means of twogroups (new method vs. traditional method). The null hypothesis (H0) states that
+there is no significant difference between the means, while the alternative
+hypothesis (Ha) suggests that there is a significant difference
+
+ans============
+H₀: No difference between teaching methods  
+H₁: Significant difference exists
+t value> t criticL
+we reject H0
+
+The calculated t-value shows the improvement is real,
+so the new teaching method effectively improves student performance.
+
+
+
+14. A survey is conducted to estimate the proportion of people in a city who support aparticular policy. A random sample of 500 individuals is surveyed, and 320of themexpress support for the policy. Calculate a 90% confidence interval for the
+population proportion, given the sample proportion. Data: Sample size (n) =500, Number of successes (x) = 320, Confidence level = 90%
+Explanation: In this problem, we aim to estimate the population proportionbasedon the sample proportion. By constructing a confidence interval, we providearange of plausible values for the population proportion. The 90%confidencelevel
+indicates that we are 90% confident that the true population proportion falls
+within the calculated interval.
+
+
+ans====
+
+Given: n = 500, x = 320, p̂ = 0.64, Z = 1.645 (90% confidence)
+Sample proportion, p̂ = x ÷ n = 320 ÷ 500 = 0.64
+Confidence level = 90% → Z critical ≈ 1.645
+
+Formula: CI = p̂ ± Z × √[p̂(1 − p̂)/n]
+Standard error (SE) = √[p̂ × (1 − p̂) ÷ n]
+Margin of error (ME) = Z × SE
+
+Calculation:
+SE = √[0.64 × 0.36 ÷ 500] ≈ 0.0215
+ME = 1.645 × 0.0215 ≈ 0.0354
+CI = 0.64 ± 0.0354 → 0.605 to 0.675
+
+Answer: 90% CI = 0.605 to 0.675
+we are 90% sure that about 61% to 68% of people in the city support the policy.
+
+
+
+
+15. A company sells smartphones, and the number of defects per batch follows a
+Poisson distribution with a mean of 2 defects. What is the probability of havingexactly 3 defects in a randomly selected batch?
+Data: Mean number of defects (λ) =2, Number of defects (x) = 3
+Explanation: The problem involves a discrete distribution (Poisson) becauseweare dealing with the count of defects in a batch of smartphones. 
+The Poisson distribution models the probability of a given number of events occurringwithinafixed interval of time or space
+
+
+ans===
+step1: Poisson formula
+P(X = x) = (λ^x × e^(−λ)) ÷ x!
+Where:
+λ = mean
+x = number of events
+e =2.718
+
+step2:P(X = 3) = (2^3 × e^(−2)) ÷ 3!
+= (8 × e^(−2)) ÷ 6
+= 1.333 × 0.1353=0.180
+Probability of exactly 3 defects = 0.18
+
+conclusion:
+ek randomly selected batch me exactly 3 defects hone ki probablity 0.18 ya 18% hai.
+
+
+
 
